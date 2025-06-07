@@ -1,6 +1,8 @@
+#!/usr/bin/env node
+
 import inquirer from 'inquirer'
-import { startQuiz } from '@/controllers/english-quiz-controller' // Certifique-se de que o nome da função e o caminho estão corretos para o seu controller
-import { GeneratedQuizQuestion } from '@/types/quiz-types' // Garanta que este import aponte para sua interface de pergunta
+import { startQuiz } from '../controllers/english-quiz-controller.js'
+import { GeneratedQuizQuestion } from '../types/quiz-types.js'
 
 export async function runEnglishQuiz() {
   console.log('Bem-vindo ao DevQuiz de Inglês para Brasileiros! 🇧🇷📚')
@@ -48,12 +50,12 @@ export async function runEnglishQuiz() {
     let questionNumber = 0
 
     for (const question of questions) {
-      questionNumber++ 
-      console.log(`\n--- Pergunta ${questionNumber}/${questions.length} ---`) 
+      questionNumber++
+      console.log(`\n--- Pergunta ${questionNumber}/${questions.length} ---`)
 
       const { userAnswer } = await inquirer.prompt([
         {
-          type: 'list', 
+          type: 'list',
           name: 'userAnswer',
           message: question.question,
           choices: question.options,

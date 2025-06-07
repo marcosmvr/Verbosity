@@ -1,6 +1,17 @@
 import { Mistral } from '@mistralai/mistralai'
-import 'dotenv/config'
-import { GeneratedQuizQuestion, QuizBatchResponse } from '../types/quiz-types' // Importe o novo tipo
+import {
+  GeneratedQuizQuestion,
+  QuizBatchResponse,
+} from '../types/quiz-types.js'
+
+import { fileURLToPath } from 'url'
+import { dirname, resolve } from 'path'
+import dotenv from 'dotenv'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+dotenv.config({ path: resolve(__dirname, '../../.env') })
 
 const apiKey = process.env.MISTRAL_API_KEY
 

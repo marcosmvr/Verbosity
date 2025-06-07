@@ -1,15 +1,18 @@
 {
   "name": "verbosity",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Um CLI interativo para desenvolvedores brasileiros que gera quizzes de inglês dinâmicos com IA...",
+  "main": "dist/cli/english-quiz-cli.js",
   "scripts": {
     "dev": "tsx src/cli/english-quiz-cli.ts"
+  },
+  "bin": {
+    "verbosity": "./dist/cli/english-quiz-cli.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "@types/node": "^22.15.30",
     "tsx": "^4.19.4",

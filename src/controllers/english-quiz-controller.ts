@@ -1,5 +1,5 @@
-import { generateQuizQuestionsBatch } from '@/services/mistral-service'
-import { GeneratedQuizQuestion } from '@/types/quiz-types'
+import { generateQuizQuestionsBatch } from '../services/mistral-service.js'
+import { GeneratedQuizQuestion } from '../types/quiz-types.js'
 
 export async function startQuiz(
   amount: number,
