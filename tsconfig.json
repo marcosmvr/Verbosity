@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2024",
-    "module": "commomjs",
+    "module": "esnext",
+    "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     },
     "strict": true,
     "esModuleInterop": true
