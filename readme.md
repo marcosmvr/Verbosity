@@ -31,7 +31,7 @@ Certifique-se de ter o [Node.js](https://nodejs.org/en/) (versão 18 ou superior
 
     ```bash
     git clone https://github.com/marcosmvr/Verbosity.git
-    cd seu-repositorio
+    cd Verbosity
     ```
 
 2.  **Instale as Dependências:**
