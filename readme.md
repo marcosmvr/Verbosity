@@ -1,6 +1,3 @@
-Aqui está o arquivo `README.md` completo para você copiar e colar diretamente no seu projeto:
-
-````md
 # DevQuiz de Inglês para Brasileiros 🇧🇷📚
 
 -----
@@ -139,4 +136,3 @@ Marcos Vinicius - [https://www.linkedin.com/in/marcos-vinicius-b274b6334/](https
 
 Link do Projeto: [https://github.com/marcosmvr/Verbosity](https://github.com/marcosmvr/Verbosity)
 
-```
